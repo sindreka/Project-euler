@@ -5,7 +5,7 @@ def getText(filename):
 	li = []
 	mat = []
 	for i in range(len(text)):
-		if text[i] == '\n':
+		if text[i] == "\n":
 			mat.append(li)
 			li = []
 		elif text[i] == " ":
@@ -13,9 +13,11 @@ def getText(filename):
 			num = ""
 		else:
 			num += text[i]
-			if text[i+1] == "\n":
+			if i+1 < len(text) and text[i+1] == "\n":
 				li.append(int(num))
 				num = ""
+	li.append(int(num))
+	mat.append(li)
 	return mat
 
 def smartAlgorithm(mat):
@@ -25,5 +27,5 @@ def smartAlgorithm(mat):
 			copyOfList[i-1][j] += max(copyOfList[i][j],copyOfList[i][j+1])
 	return copyOfList[0][0]
 
-print(smartAlgorithm(getText("p018.txt")))
+print(smartAlgorithm(getText("p067.txt")))
 
