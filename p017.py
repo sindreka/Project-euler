@@ -1,6 +1,3 @@
-
-
-
 #one        3
 #two        3
 #three      5
@@ -13,9 +10,6 @@
 
 first9 = (3+3+5+4+4+3+5+5+4)
 #ten 3
-
-
-#eleven     6
 #twelve     6
 #thirteen   8
 #fourteen   8
@@ -83,15 +77,15 @@ for i in range(1,1000):
         elif i % 100 == 11 or i % 100 == 12:
             count += 6
             print("11 or 12")
-        elif i % 100 == 13 or i % 100 == 14 or i % 100 == 19:
+        elif i % 100 == 13 or i % 100 == 14 or i % 100 == 19 or i % 100 == 18:
             count += 8
-            print("13, 14 or 19")
+            print("13, 14,18 or 19")
         elif i % 100 == 15 or i % 100 == 16:
             count += 7
             print("15 or 16")
-        elif i % 100 == 17 or i % 100 == 18:
+        elif i % 100 == 17:
             count += 9
-            print("17 or 18")
+            print("17")
     if (0 < i % 100 < 10) or (100 > i % 100 >= 20):
         if i % 10 == 1 or i % 10 == 2 or i % 10 == 6:
             count += 3
