@@ -1,5 +1,5 @@
 def isLeapYear(year):
-    if year % 4 and not year % 400:
+    if year % 4 and (not year % 100 and year % 400):
         return 0
     return 1
 def daysInMonth(year):
