@@ -9,7 +9,6 @@ totSum = 0
 for i in range(1,10000):
     su = sumOfDevisors(i)
     if i == sumOfDevisors(su) and i != su:
-        print("i: ", i, "su", su)
         totSum += i
 
 print(totSum)
